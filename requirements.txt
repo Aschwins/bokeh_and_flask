@@ -1,0 +1,6 @@
+bokeh
+flask
+flask-sqlalchemy
+flask-migrate
+python-dotenv
+pandas
