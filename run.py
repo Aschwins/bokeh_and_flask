@@ -1,5 +1,5 @@
-from app import app, db
-from app.models import User
+from web_app import app, db
+from web_app.models import User
 
 
 @app.shell_context_processor
