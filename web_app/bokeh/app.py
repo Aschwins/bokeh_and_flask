@@ -5,6 +5,7 @@ from bokeh.sampledata.sea_surface_temperature import sea_surface_temperature
 from bokeh.themes import Theme
 
 import os
+from config import Config
 
 
 def bkapp(doc):
@@ -28,4 +29,4 @@ def bkapp(doc):
     doc.add_root(column(slider, plot))
 
     #TODO: Fix theme.yaml path, findable from running anywhere.
-    doc.theme = Theme(filename=os.path.join('web_app', 'bokeh', 'theme.yaml'))
+    doc.theme = Theme(filename=os.path.join(Config.BASEDIR, 'web_app', 'bokeh', 'theme.yaml'))
